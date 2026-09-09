@@ -1447,9 +1447,8 @@ async function submitOrder(){
       note.textContent = 'Дякуємо! Перенаправляємо в Telegram до Катерини для обговорення суми передоплати...';
 
       const dmText =
-        `Доброго дня! На сайті оформлено замовлення. ` +
-        `Моє ім'я: ${name}, телефон: ${phone}. ` +
-        `Хочу обговорити суму передоплати за мої товари.`;
+        `Доброго дня. Я хочу зробити замовлення на вашому сайті накладеним платежем по передплаті. ` +
+        `Ім'я: ${name}, номер: ${phone}.`;
       window.location.href = `https://t.me/${KATERYNA_TELEGRAM_USERNAME}?text=${encodeURIComponent(dmText)}`;
     } catch(err){
       console.error('send-order error:', err);
