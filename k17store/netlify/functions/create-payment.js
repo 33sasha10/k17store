@@ -50,7 +50,7 @@ exports.handler = async (event) => {
   const MONO_TOKEN = process.env.MONO_TOKEN;
   // Реальна адреса сайту — використовується як резервний варіант, якщо
   // змінна середовища SITE_URL не задана на Netlify.
-  const SITE_URL = process.env.SITE_URL || 'https://k17store.netlify.app';
+  const SITE_URL = process.env.SITE_URL || 'https://k17beauty.com.ua';
 
   if (!MONO_TOKEN) {
     console.error('MONO_TOKEN is not set in environment variables');
